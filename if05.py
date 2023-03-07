@@ -6,4 +6,31 @@ def main(n):
     Returns:
         int: return answer.
     """
-    return
+    
+    x1 = n%10  
+    
+    n = n//10      
+    x2 = n%10  
+    n = n//10  
+    
+    x3 = n%10  
+    n = n//10 
+    
+    x4 = n%10 
+    
+    x5 = n//10
+    
+    mx = x5
+    if x4 > mx:
+        mx = x4
+    if x3 > mx:
+        mx = x3
+    if x2 > mx:
+        mx = x2
+    if x1 > mx:
+        mx = x1
+    return mx
+    
+print(main(19345))
+    
+    
